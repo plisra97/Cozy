@@ -1,0 +1,146 @@
+:root{
+    --primary: #febc9a;
+    --secondary: #cc9c5e;
+    --terzo:  rgb(254, 188, 154);
+}
+
+body{
+    font-family: 'Quicksand';
+}
+
+/* navbar */
+.nav-cst{
+    background-color: var(--terzo);
+            
+}
+
+
+
+
+/* bottoni */
+
+.btn-custom{
+    background-color: white;
+    border: 2px solid var(--secondary);
+    transition: 0.4s;
+}
+
+.btn-custom:hover{
+    background-color: var(--terzo);
+    border: 2px solid white;
+
+}
+
+/* backgroud */
+
+
+
+
+
+
+
+/* immagine header cerchio grande */
+.img-header{
+    
+    border-radius: 50%;
+    width: 550px;
+    height: 500px;
+    
+
+}
+
+
+
+/* immagini nei cerchietti */
+.circle-img{
+
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 0 7px  rgb(254, 188, 154), 0px 0px 0 10px #F8F9FA;
+
+}
+
+
+/* ombreggiatura immagine */
+
+@-webkit-keyframes shadow-drop-br {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.40);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.40);
+    }
+  }
+  @keyframes shadow-drop-br {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.40);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.40);
+    }
+  }
+  
+.shadow-drop-br {
+	-webkit-animation: shadow-drop-br 0.10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-br 0.10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* fine ombreggiatura immagine */
+
+
+/* effetto testo */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+.trackinginexpand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* fine effetto testo */
+
+  
+  
+
+
+/* immagini */
+.img-size{
+  width: 40%;
+  height: 50vh;
+}
+
+
+.increment-numbers{
+
+  font-size: 60px;
+  color: var(--secondary);
+  font-weight: 900;
+
+}
