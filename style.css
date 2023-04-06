@@ -58,7 +58,11 @@ body{
     width: 200px;
     height: 200px;
     box-shadow: 0px 0px 0 7px  rgb(254, 188, 154), 0px 0px 0 10px #F8F9FA;
+    transition: 1.2;
+}
 
+.circle-img:hover{
+  scale: 1.1;
 }
 
 
@@ -94,7 +98,7 @@ body{
 
 
 /* effetto testo */
-@-webkit-keyframes tracking-in-expand {
+/* @-webkit-keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
       opacity: 0;
@@ -105,7 +109,7 @@ body{
     100% {
       opacity: 1;
     }
-  }
+  } */
   @keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
@@ -120,9 +124,11 @@ body{
 }
   
 .trackinginexpand {
-	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	/* -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; */
+	        animation: tracking-in-expand 3s;
+          animation-delay: 0.5s;
 }
+
 
 /* fine effetto testo */
 
@@ -143,4 +149,48 @@ body{
   color: var(--secondary);
   font-weight: 900;
 
+}
+
+.cardC{
+  border: 3px solid var(--secondary);
+  width: 300px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+
+.col-custom{
+  border-radius: 4px;
+  background-color: var(--secondary);
+  width: 300px;
+
+  transition: 0.4s;
+
+}
+
+.col-custom:hover{
+  background-color: var(--terzo);
+  transform: scale(1.2);
+}
+
+.icone{
+  color: #483326;
+}
+
+.iconecolore2{
+color: white;
+}
+
+
+.fluidColor{
+  background-color: #483326;
+  height: 150px;
+}
+
+
+.divVuoti{
+  height: 50px;
 }

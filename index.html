@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/c248da5701.js" crossorigin="anonymous"></script>
+     <!-- CDN AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -51,17 +53,27 @@
 
         <!-- fine navbar -->
         <!-- inizio header -->
-        <header class="container-fluid color-change-2x mt-5">
-            <div class="row border-bottom vh-100">
+        <header class="container-fluid color-change-2x mt-5 border-bottom ">
+            <div class="row align-items-center mb-5">
                 <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="fw-bold trackinginexpand"> Super Cozy!</h1>
-                    <h2> Spedizione in tutta Italia</h2>
+                    <div id="test"   >
+                        <h1 class="fw-bold trackinginexpand"> Super Cozy!</h1>
+                    </div>
+                        <h2> Spedizione in tutta Italia</h2>
                     <button type="button" class="btn btn-custom">Scopri di piu!</button>
                 </div>
                 <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
                     <img class="img-header shadow-drop-br" src="./media/view-chair-with-textured-fur-fabric.jpg" alt="sedia">
                 </div>
-                <div class="col-12 col-lg-3 mt-5">
+                <!-- per dispositivi grandi -->
+                <div class="d-none d-lg-block col-lg-3 mt-5 d-flex flex-column justify-content-center align-items-center">
+                    <img class="circle-img my-3 mx-3" src="./media/divano.jpg" alt="divano">
+                    <img class="circle-img my-3 mx-3" src="./media/sedia.jpg" alt="sedia">
+                    <img class="circle-img my-3 mx-3" src="./media/tavolo.jpg" alt="tavolo">
+                </div>
+                
+                <!-- per dispositivi mobili -->
+                <div class="d-lg-none col-12 col-lg-3 mt-5 d-flex justify-content-center align-items-center">
                     <img class="circle-img my-3 mx-3" src="./media/divano.jpg" alt="divano">
                     <img class="circle-img my-3 mx-3" src="./media/sedia.jpg" alt="sedia">
                     <img class="circle-img my-3 mx-3" src="./media/tavolo.jpg" alt="tavolo">
@@ -69,20 +81,22 @@
             </div>
         </header>
         <!-- fine header -->
-        <!-- inizio sezione  -->
-        <div class="container mt-5">
-                <div class="row">
-                    
+        <!-- inizio sezione un po di numeri -->
+        <h2 class="text-center fw-bold  mt-5"> RINNOVA LA TUA CASA </h2>
+        <div class="container vh-100 d-flex justify-content-center align-items-center">
+                
+            <div class="row">
+                
                     <div class="col-12 col-lg-8 d-flex justify-content-center">
                                                      
-                        <img class="img-size mx-3" src="./media/chic-mid-century-modern-luxury-aesthetics-living-room-with-gray-velvet-couch-blue-rug.jpg" alt="">
-                        <img class="img-size mx-3" src="./media/empty-modern-room-with-furniture.jpg" alt="">
-                        <img class="img-size mx-3" src="./media/picture-frame-by-velvet-armchair.jpg" alt="">
+                        <img class="img-size mx-3 " data-aos="fade-right" data-aos-duration="1500" data-aos-offset="400" src="./media/chic-mid-century-modern-luxury-aesthetics-living-room-with-gray-velvet-couch-blue-rug.jpg" alt="">
+                        <img class="img-size mx-3"  data-aos="fade-right" data-aos-duration="1800" data-aos-offset="400" src="./media/empty-modern-room-with-furniture.jpg" alt="">
+                        <img class="img-size mx-3"  data-aos="fade-right" data-aos-duration="2000" data-aos-offset="400" src="./media/picture-frame-by-velvet-armchair.jpg" alt="">
 
                     </div>
                     <div class="col-12 col-md-4">
 
-                        <h2 id="inizio" class="text-center mt-5 fw-bold"> Un pò di numeri </h2>
+                        <h2 id="inizio" class="text-center fw-bold"> Un pò di numeri </h2>
         
                         <p class="lead text-center"><span id="first-span" class="increment-numbers d-block">0</span> Clienti Soddisfatti</p>
                         <p class="lead text-center"><span id="second-span" class="increment-numbers d-block">0</span> Prodotti Venduti</p>
@@ -90,13 +104,80 @@
         
                     </div>
 
-                </div>
+            </div>
         </div>
 
         <!-- fine sezione  -->
 
+        <!-- sezione spedizioni -->
+        <div class="container-fluid fluidColor d-flex align-items-center">
+            <div class="container my-5">
+                <div class="row text-center justify-content-center">
+                    <div class="col-12 col-md-4 col-custom mx-5">
+                        <i class="icone fa-solid fa-truck-fast fa-2x my-3"></i>
+                        <p>Spedizione veloce</p>
+                    </div>
+                    <div class="col-12 col-md-4 col-custom mx-5">
+                        <i class="icone fa-solid fa-leaf fa-2x my-3"></i>
+                        <p>Materiali sostenibili</p>
+                    </div>
+                    <div class="col-12 col-md-4 col-custom mx-5">
+                        <i class="icone fa-solid fa-gem fa-2x my-3"></i>
+                        <p>Alta qualità</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fine sezione spedizioni -->
+
+         <!-- INIZIO SWIPER -->
+    <div id="aboutUs" class="divVuoti">
+
+    </div>
+
+    <section class="container my-5 py-5" >
 
 
+      <div class="row justify-content-center">
+        <h2 class="display-3 text-center">Recensioni</h2>
+
+        <div class="col-12 col-md-8">
+
+
+          <!-- Slider main container -->
+          <div class="swiper">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+              <!-- Slides -->
+              
+           
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+           
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINE SWIPER -->
+
+         
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+         <!-- SWIPER CDN -->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
