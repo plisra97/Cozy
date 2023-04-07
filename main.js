@@ -154,8 +154,12 @@ let h1 = document.querySelector('h1');
 let test = document.querySelector('#test');
 
 test.addEventListener('mouseenter', ()=>{
-    
-    h1.classList.add('trackinginexpand');
+    setTimeout(()=>{
+
+        h1.classList.add('trackinginexpand');
+
+    },1250)
+   
 
    
 })
@@ -166,7 +170,8 @@ test.addEventListener('mouseleave', ()=>{
 
         h1.classList.remove('trackinginexpand');
 
-    },2500)
+    },1500)
+    
 
 
 
@@ -174,14 +179,24 @@ test.addEventListener('mouseleave', ()=>{
 
 
 
+
+
+
 // swiper
 
-let reviews = [
 
-    {name : 'Valerio', quote : `il sito più bello che abbia mai visto`, vote : 5},
-    {name : 'Nicolae', quote : `il più bello del mondo`, vote : 4},
-    {name : 'Sara', quote : `spedizioni rapide, palette pessime`, vote : 3},
-    {name : 'Fabio', quote : `il mio falegname lo faceva meglio`, vote : 1},
+
+
+  let reviews = [
+
+    {name : 'John', quote : `"il sito più bello che abbia mai visto"`, vote : 5},
+    {name : 'Kandy', quote : `"spedizioni veloci"`, vote : 5},
+    {name : 'Tim', quote : `"arrivato pezzo danneggiato"`, vote : 3},
+    {name : 'Kayl', quote : `"Pessimo"`, vote : 1},
+    {name : 'Kim', quote : `"Consigliatissimo!"`, vote : 5},
+    {name : 'Lily', quote : `"spedizioni veloci"`, vote : 4},
+    {name : 'Ginny', quote : `"arrivato pezzo danneggiato"`, vote : 3},
+    {name : 'Maya', quote : `"Pessimo"`, vote : 2},
 
 
 ];
@@ -200,21 +215,23 @@ reviews.forEach( (recensione)=>{
 
   // assegno le classi con classList.add al div creato
 
-  div.classList.add('swiper-slide' , 'd-flex' , 'align-items-center' , 'justify-content-center');
+  div.classList.add('swiper-slide','d-flex', 'justify-content-center', 'align-items-center');
 
   // riempio il div, con innerHTML
   // attenzione a modificare con la sintassi ${} con i parametri reali che ci serve visualizzare sul browser, prendendoli dall'array di oggetti.
 
   div.innerHTML = `
   
-            <div class="card-custom">
-              <h3>${recensione.name}</h3>
-              <p class="text-center p-2">
-                ${recensione.quote}
-              </p>
-              <div class="d-flex">
-                ${createStars(recensione.vote)}
-              </div>
+            <div class="card-custom d-flex flex-column align-items-center justify-content-center">
+                     
+                    <h3 class= "fw-bold">${recensione.name}</h3>
+                    <p class="text-center p-2">
+                        ${recensione.quote}
+                    </p>
+                    <div class="d-flex align-items-center">
+                        ${createStars(recensione.vote)}
+                    </div>
+                    
             </div>
   
   `;
@@ -227,7 +244,7 @@ reviews.forEach( (recensione)=>{
 } )
 
 
-// funzione crea stelline di Hokuto
+// funzione crea stelline 
 
 function createStars(fullStars){
 
@@ -242,7 +259,7 @@ function createStars(fullStars){
     if(fullStars >= i){
 
 
-      final += `<i class="fa-solid fa-star"></i>`;
+      final += `<i class="fa-solid fa-star icone"></i>`;
 
 
       // decrementatore
@@ -252,7 +269,7 @@ function createStars(fullStars){
     } else {
 
 
-      final += `<i class="fa-regular fa-star"></i>`;
+      final += `<i class="fa-regular fa-star icone"></i>`;
 
 
     }
@@ -265,56 +282,43 @@ function createStars(fullStars){
 }
 
 
-// inizializzazione swiper
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
+    // EFFECT
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+    },
 
-      // EFFECT
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 1,
-      coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-      },
+    // breakpoints
+    breakpoints: {
+          640: {
+            slidesPerView: 2,
+             
+           },
+    },
 
-      // breakpoints
-      breakpoints: {
-            640: {
-              slidesPerView: 2,
-              // spaceBetween: 20,
-             },
-      },
+     // Autoplay
+    autoplay: {
+    delay: 1800,
+    disableOnInteraction: false,
+    },
+    
 
-       // Autoplay
-      autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-      },
-  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      // scrollbar: {
-      //   el: '.swiper-scrollbar',
-      // },
-    });
-
-
+})

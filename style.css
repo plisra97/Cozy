@@ -31,23 +31,20 @@ body{
 
 }
 
-/* backgroud */
-
-
-
 
 
 
 
 /* immagine header cerchio grande */
 .img-header{
-    
-    border-radius: 50%;
-    width: 550px;
-    height: 500px;
+  
+    border-radius: 50% 50%;
+    width: 100%;
+    height: 70vh;
     
 
 }
+
 
 
 
@@ -125,8 +122,8 @@ body{
   
 .trackinginexpand {
 	/* -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; */
-	        animation: tracking-in-expand 3s;
-          animation-delay: 0.5s;
+	        animation: tracking-in-expand 1s;
+          /* animation-delay: 0.6s; */
 }
 
 
@@ -151,6 +148,7 @@ body{
 
 }
 
+/* card con icone */
 .cardC{
   border: 3px solid var(--secondary);
   width: 300px;
@@ -166,7 +164,7 @@ body{
   border-radius: 4px;
   background-color: var(--secondary);
   width: 300px;
-
+  height: 100px;
   transition: 0.4s;
 
 }
@@ -191,6 +189,46 @@ color: white;
 }
 
 
-.divVuoti{
-  height: 50px;
+.swiper {
+  width: 1000px;
+  height: 500px;
 }
+
+.swiper-button-prev{
+  color: #483326;
+}
+
+.swiper-button-next{
+  color: #483326;
+}
+
+.card-custom {
+  
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+ 
+}
+
+h2,h3{
+  color: var(--secondary);
+} 
+
+
+@media screen and (max-width: 900px) {
+
+  .col-custom:hover{
+
+      transform: scale(0.5);
+  
+  }
+  
+}
+
+.footerC{
+  background-color: var(--primary);
+}
+
+

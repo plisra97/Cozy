@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c248da5701.js" crossorigin="anonymous"></script>
      <!-- CDN AOS -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- cdn swiper -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -130,54 +132,102 @@
         </div>
 
         <!-- fine sezione spedizioni -->
-
-         <!-- INIZIO SWIPER -->
-    <div id="aboutUs" class="divVuoti">
-
-    </div>
-
-    <section class="container my-5 py-5" >
-
-
-      <div class="row justify-content-center">
-        <h2 class="display-3 text-center">Recensioni</h2>
-
-        <div class="col-12 col-md-8">
-
-
-          <!-- Slider main container -->
-          <div class="swiper">
-
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-
-              <!-- Slides -->
-              
-           
+        <!-- dicono di noi -->
+        <section class="container mt-5">
+            <div class="row">
+                <h2 class="text-center display-5"> Dicono di noi..</h2>
+                <div class="col-12">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <!-- <div class="swiper-slide">
+                                
+                            </div>
+                            <div class="swiper-slide">
+                                
+                            </div>
+                            <div class="swiper-slide">
+                                
+                            </div> -->
+                            
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                       
+                    </div>
+                </div>
             </div>
+        </section>
+         
 
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
+        <!-- Footer -->
+        <footer class="container-fluid text-center text-lg-start text-muted mt-5 footerC">
+         
+            <div class="row mt-3">
+                
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto my-4">
+                
+                    <h6 class="text-uppercase fw-bold my-4 icone">
+                        <img class="mx-2" src="./media/logo.png " alt="logo"> Super Cozy!
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+               
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto my-4">
+                
+                    <h6 class="icone fw-bold my-4">
+                        Prodotti
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Sedie</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Tavoli</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Complementi d'arredo</a>
+                    </p>
+                
+                </div>
+                
+               
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 my-4">
+                
+                    <h6 class="text-uppercase fw-bold my-4 icone">Contatti</h6>
+                    <p><i class="fas fa-home me-3 icone"></i> Lorem, ipsum dolor.</p>
+                    <p>
+                        <i class="fas fa-envelope me-3 icone"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3 icone "></i> 33555454</p>
+                    
+                </div>
+                
+            </div>
            
-          </div>
+        </footer>
+             
 
+        
+        <!-- Footer -->
 
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FINE SWIPER -->
+        
 
          
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-         <!-- SWIPER CDN -->
-         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
