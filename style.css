@@ -39,10 +39,19 @@ body{
 .img-header{
   
     border-radius: 50% 50%;
-    width: 100%;
-    height: 70vh;
+    width: 550px;
+    height: 500px;
     
 
+}
+
+/* immagine device small */
+.imgSmall{
+  background-image: url(./media/view-chair-with-textured-fur-fabric.jpg);
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  
 }
 
 
@@ -63,7 +72,23 @@ body{
 }
 
 
-/* ombreggiatura immagine */
+/* cerchietti device small */
+
+.circle-imgS{
+
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 0 7px  rgb(254, 188, 154), 0px 0px 0 10px #F8F9FA;
+  transition: 1.2;
+}
+
+.circle-imgS:hover{
+scale: 1.1;
+}
+
+
+/* ombreggiatura immagine header*/
 
 @-webkit-keyframes shadow-drop-br {
     0% {
@@ -133,37 +158,35 @@ body{
   
 
 
-/* immagini */
+/* sezione 3 immagini  */
 .img-size{
-  width: 40%;
-  height: 50vh;
+  width: 250px;
+  height: 350px;
 }
 
 
 .increment-numbers{
 
-  font-size: 60px;
+  font-size: 50px;
   color: var(--secondary);
-  font-weight: 900;
+  font-weight: 800px;
 
 }
 
 /* card con icone */
 .cardC{
-  border: 3px solid var(--secondary);
+  border: 3px solid var(--primary);
   width: 300px;
   height: 180px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+   
+  
 }
 
 
 .col-custom{
   border-radius: 4px;
   background-color: var(--secondary);
-  width: 300px;
+  width: 30%;
   height: 100px;
   transition: 0.4s;
 
@@ -190,7 +213,7 @@ color: white;
 
 
 .swiper {
-  width: 1000px;
+  width: 100%;
   height: 500px;
 }
 
@@ -217,7 +240,7 @@ h2,h3{
 } 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
   .col-custom:hover{
 

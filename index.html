@@ -55,7 +55,7 @@
 
         <!-- fine navbar -->
         <!-- inizio header -->
-        <header class="container-fluid color-change-2x mt-5 border-bottom ">
+        <header class="container-fluid color-change-2x mt-5 border-bottom d-none d-lg-block">
             <div class="row align-items-center mb-5">
                 <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
                     <div id="test"   >
@@ -73,57 +73,88 @@
                     <img class="circle-img my-3 mx-3" src="./media/sedia.jpg" alt="sedia">
                     <img class="circle-img my-3 mx-3" src="./media/tavolo.jpg" alt="tavolo">
                 </div>
-                
-                <!-- per dispositivi mobili -->
-                <div class="d-lg-none col-12 col-lg-3 mt-5 d-flex justify-content-center align-items-center">
-                    <img class="circle-img my-3 mx-3" src="./media/divano.jpg" alt="divano">
-                    <img class="circle-img my-3 mx-3" src="./media/sedia.jpg" alt="sedia">
-                    <img class="circle-img my-3 mx-3" src="./media/tavolo.jpg" alt="tavolo">
-                </div>
+
             </div>
         </header>
+
+        <!-- header dispositivi mobili -->
+        <section class="container-fluid d-block d-lg-none">
+            <div class="row">
+                <div class="col-12 imgSmall h100 d-flex justify-content-center align-items-center flex-column">
+                    <div id="test">
+                        <h1 class="fw-bold trackinginexpand iconecolore2"> Super Cozy!</h1>
+                    </div>
+                        <h2 class="iconecolore2"> Spedizione in tutta Italia</h2>
+                    <button type="button" class="btn btn-custom">Scopri di piu!</button>
+                </div>
+                <div class="col-6 mt-5 d-flex justify-content-center align-items-center">
+                    <img class="circle-imgS" src="./media/mid-century-modern-living-room-interior-design-with-monstera-tree.jpg" alt="divano">
+                </div>
+                <div class="col-6 mt-5 d-flex justify-content-center align-items-center">
+                    <img class="circle-imgS" src="./media/sedia.jpg" alt="sedia">
+                </div>
+                <div class="col-6 mt-5 d-flex justify-content-center align-items-center">
+                    <img class="circle-imgS" src="./media/chic-modern-luxury-aesthetics-style-living-room-blue-tone.jpg" alt="tavolo">
+                </div>
+                <div class="col-6 mt-5 d-flex justify-content-center align-items-center">
+                    <img class="circle-imgS" src="./media/empty-flat-interrior-with-elements-decoration.jpg" alt="divano">
+                </div>
+                
+                
+            </div>
+        </section>
         <!-- fine header -->
         <!-- inizio sezione un po di numeri -->
-        <h2 class="text-center fw-bold  mt-5"> RINNOVA LA TUA CASA </h2>
-        <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <h2 class="text-center fw-bold my-5"> RINNOVA LA TUA CASA </h2>
+        <div class="container-fluid h-100 d-flex justify-content-center align-items-center">
                 
             <div class="row">
                 
                     <div class="col-12 col-lg-8 d-flex justify-content-center">
                                                      
-                        <img class="img-size mx-3 " data-aos="fade-right" data-aos-duration="1500" data-aos-offset="400" src="./media/chic-mid-century-modern-luxury-aesthetics-living-room-with-gray-velvet-couch-blue-rug.jpg" alt="">
-                        <img class="img-size mx-3"  data-aos="fade-right" data-aos-duration="1800" data-aos-offset="400" src="./media/empty-modern-room-with-furniture.jpg" alt="">
-                        <img class="img-size mx-3"  data-aos="fade-right" data-aos-duration="2000" data-aos-offset="400" src="./media/picture-frame-by-velvet-armchair.jpg" alt="">
+                        <img class="img-size me-3" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="400" src="./media/chic-mid-century-modern-luxury-aesthetics-living-room-with-gray-velvet-couch-blue-rug.jpg" alt="">
+                        <img class="img-size me-3"  data-aos="fade-right" data-aos-duration="1800" data-aos-offset="400" src="./media/empty-modern-room-with-furniture.jpg" alt="">
+                        <img class="img-size"  data-aos="fade-right" data-aos-duration="2000" data-aos-offset="400" src="./media/picture-frame-by-velvet-armchair.jpg" alt="">
 
                     </div>
-                    <div class="col-12 col-md-4">
+                    <!-- dispositivi grandi -->
+                    <div class="col-12 col-lg-4 d-none d-lg-block">
 
-                        <h2 id="inizio" class="text-center fw-bold"> Un pò di numeri </h2>
+                        <h2 id="inizio" class="text-center"> Un pò di numeri </h2>
         
                         <p class="lead text-center"><span id="first-span" class="increment-numbers d-block">0</span> Clienti Soddisfatti</p>
                         <p class="lead text-center"><span id="second-span" class="increment-numbers d-block">0</span> Prodotti Venduti</p>
                         <p class="lead text-center"><span id="third-span" class="increment-numbers d-block">0</span> Recensioni</p>
         
                     </div>
+                    <!-- dispositivi piccoli -->
+                    <div class="col-12 d-block d-lg-none d-flex justify-content-between align-items-center my-5">
 
+                        <h2 id="inizio"> Un pò di numeri </h2>
+        
+                        <p class="lead text-center"><span id="first-span" class="increment-numbers d-block">0</span> Clienti Soddisfatti</p>
+                        <p class="lead text-center"><span id="second-span" class="increment-numbers d-block">0</span> Prodotti Venduti</p>
+                        <p class="lead text-center"><span id="third-span" class="increment-numbers d-block">0</span> Recensioni</p>
+        
+                    </div>
             </div>
         </div>
 
         <!-- fine sezione  -->
 
-        <!-- sezione spedizioni -->
-        <div class="container-fluid fluidColor d-flex align-items-center">
+        <!-- sezione icone -->
+        <div class="container-fluid fluidColor d-flex align-items-center mt-5">
             <div class="container my-5">
-                <div class="row text-center justify-content-center">
-                    <div class="col-12 col-md-4 col-custom mx-5">
+                <div class="row text-center">
+                    <div class="col-12 col-custom m-3">
                         <i class="icone fa-solid fa-truck-fast fa-2x my-3"></i>
                         <p>Spedizione veloce</p>
                     </div>
-                    <div class="col-12 col-md-4 col-custom mx-5">
+                    <div class="col-12 col-custom m-3">
                         <i class="icone fa-solid fa-leaf fa-2x my-3"></i>
                         <p>Materiali sostenibili</p>
                     </div>
-                    <div class="col-12 col-md-4 col-custom mx-5">
+                    <div class="col-12 col-custom m-3">
                         <i class="icone fa-solid fa-gem fa-2x my-3"></i>
                         <p>Alta qualità</p>
                     </div>
@@ -131,9 +162,9 @@
             </div>
         </div>
 
-        <!-- fine sezione spedizioni -->
+        <!-- fine sezione icone -->
         <!-- dicono di noi -->
-        <section class="container mt-5">
+        <section class="container-fluid mt-5">
             <div class="row">
                 <h2 class="text-center display-5"> Dicono di noi..</h2>
                 <div class="col-12">
