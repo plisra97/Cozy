@@ -292,3 +292,65 @@ h2,h3{
   height: 150px;
  
 }
+
+
+
+/* Pagina chi siamo */
+
+.circle{
+
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+}
+
+.opener{
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.moved{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 1s;
+  background-size: cover;
+  cursor: pointer;
+}
+
+
+
+.teacher-card{
+
+  height: 350px ;
+  width: 250px ;
+  border-radius: 20px;
+  border: 2px solid var(--secondary);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+
+}

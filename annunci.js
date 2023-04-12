@@ -208,9 +208,9 @@ fetch('./annunci.json').then( (response)=> response.json() ).then( (data)=> {
         // funzione che filtra per prezzo
     
         function filterbyPrice(prezzo){
-    
-            let filtered = data.filter( (annuncio)=> annuncio.price <= prezzo );        
-    
+            
+            let filtered = data.filter( (annuncio)=>  annuncio.price <= Number(prezzo) );        
+            
             showCards(filtered);
     
         }
